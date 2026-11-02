@@ -1,0 +1,8 @@
+# Customer-support agent: answers from its knowledge base and can open tickets.
+# `create_ticket` is a write tool, so every ticket waits for human approval.
+name: support
+description: Answers questions from the knowledge base and opens support tickets after confirmation.
+version: 0.1.0
+tools:
+  - search_knowledge
+  - create_ticket
