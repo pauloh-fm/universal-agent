@@ -1,0 +1,25 @@
+# Fictitious orders loaded on first run so status and cancellation can be tried immediately.
+- id: ORD-1001
+  status: shipped
+  customer_name: Alex Example
+  email: alex@example.com
+  shipping_address: 1 Sample Road, Sampletown
+  items:
+    - {sku: BKP-30, name: Trail Backpack 30L, quantity: 1, unit_price: 89.90}
+  subtotal: 89.90
+  shipping: 9.90
+  total: 99.80
+  tracking_code: TRACK-0001-EXAMPLE
+  created_at: "2026-10-20T14:00:00+00:00"
+- id: ORD-1002
+  status: processing
+  customer_name: Sam Sample
+  email: sam@example.com
+  shipping_address: 2 Demo Avenue, Exampleville
+  items:
+    - {sku: TNT-2P, name: Lightweight Tent 2 Person, quantity: 1, unit_price: 199.00}
+    - {sku: BTL-1L, name: Insulated Bottle 1L, quantity: 2, unit_price: 29.90}
+  subtotal: 258.80
+  shipping: 0.0
+  total: 258.80
+  created_at: "2026-10-30T09:30:00+00:00"

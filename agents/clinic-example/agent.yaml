@@ -1,0 +1,13 @@
+# Example clinic receptionist. All names, prices and policies are fictitious.
+# Calendar: local JSON file by default; Google Calendar with CALENDAR_BACKEND=google
+# (see docs/integrations/google-calendar.md).
+name: clinic-example
+description: Receptionist for a fictitious clinic. Answers questions and books or cancels appointments after confirmation.
+version: 0.1.0
+tools:
+  - clinic_info
+  - search_knowledge
+  - find_available_slots
+  - book_appointment
+  - find_my_appointments
+  - cancel_appointment

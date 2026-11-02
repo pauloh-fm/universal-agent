@@ -1,7 +1,7 @@
 .PHONY: install test lint fmt typecheck check serve chat
 
 install:   ## Install dependencies (incl. dev)
-	uv sync
+	uv sync --all-extras
 
 test:      ## Run the test suite (offline, no API key)
 	uv run pytest -q

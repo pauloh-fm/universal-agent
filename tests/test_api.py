@@ -18,7 +18,7 @@ def client(settings, make_runtime):
 def test_health_and_agents(client) -> None:
     assert client.get("/health").json()["status"] == "ok"
     names = {a["name"] for a in client.get("/agents").json()["agents"]}
-    assert names == {"assistant", "support"}
+    assert names == {"assistant", "support", "clinic-example", "ecommerce-example"}
 
 
 def test_approval_flow_over_http(client) -> None:

@@ -1,0 +1,11 @@
+# Example online-store assistant. Products, prices and orders are fictitious.
+name: ecommerce-example
+description: Shopping assistant for a fictitious online store. Finds products, tracks orders and places or cancels orders after confirmation.
+version: 0.1.0
+tools:
+  - search_products
+  - search_knowledge
+  - get_order_status
+  - create_order
+  - cancel_order
+  - create_ticket

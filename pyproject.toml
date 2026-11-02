@@ -21,11 +21,18 @@ dependencies = [
     "langgraph-checkpoint-sqlite>=2",
     "pydantic-settings>=2.7",
     "pyyaml>=6",
+    "tzdata>=2026.6",
     "uvicorn[standard]>=0.34",
 ]
 
 [project.scripts]
 universal-agent = "universal_agent.__main__:main"
+
+[project.optional-dependencies]
+google = [
+    "google-api-python-client>=2.201.0",
+    "google-auth>=2.62.0",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.0,<0.13.0"]

@@ -21,6 +21,8 @@ Expected:
 
 ```
 assistant            General assistant that can do exact math and tell the current time.  tools=['calculator', 'current_time']
+clinic-example       Receptionist for a fictitious clinic. Answers questions and books or cancels appointments after confirmation.  tools=[...]
+ecommerce-example    Shopping assistant for a fictitious online store. Finds products, tracks orders and places or cancels orders after confirmation.  tools=[...]
 support              Answers questions from the knowledge base and opens support tickets after confirmation.  tools=['search_knowledge', 'create_ticket']
 ```
 

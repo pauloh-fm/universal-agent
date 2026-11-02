@@ -13,7 +13,7 @@ def write_agent(root: Path, name: str, yaml_text: str, prompt: str = "You are a 
 def test_example_agents_load(settings) -> None:
     registry = AgentRegistry.from_directory(settings.agents_dir)
     assert registry.errors == {}
-    assert set(registry.agents) == {"assistant", "support"}
+    assert set(registry.agents) == {"assistant", "support", "clinic-example", "ecommerce-example"}
 
 
 def test_bad_agents_are_skipped_not_fatal(tmp_path: Path) -> None:

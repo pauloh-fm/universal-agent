@@ -40,6 +40,13 @@ class Settings(BaseSettings):
     require_confirmation_for: list[Literal["read", "write"]] = ["write"]
     """Tool risk levels that pause the graph and wait for human approval."""
 
+    # --- Calendar (clinic-example) ---------------------------------------------------
+    calendar_backend: Literal["local", "google"] = "local"
+    """`local` = JSON file in DATA_DIR. `google` = Google Calendar (docs/integrations/google-calendar.md)."""
+    google_calendar_id: str | None = None
+    google_credentials_file: Path | None = None
+    """Path to a service-account JSON key. Keep it outside the repository."""
+
     # --- HTTP API -------------------------------------------------------------------
     api_token: SecretStr | None = None
     """If set, every request except /health must send `Authorization: Bearer <token>`."""

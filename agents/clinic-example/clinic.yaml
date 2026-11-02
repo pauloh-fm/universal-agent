@@ -1,0 +1,41 @@
+# Scheduling rules for clinic-example. Edit freely; validated at first use.
+timezone: America/New_York          # IANA name; all times shown to patients are in this zone
+slot_step_minutes: 30               # granularity of offered start times
+min_notice_hours: 2                 # no bookings sooner than this
+booking_window_days: 60             # no bookings further ahead than this
+
+opening_hours:                      # mon tue wed thu fri sat sun; several ranges per day allowed
+  mon: ["08:00-12:00", "13:00-18:00"]
+  tue: ["08:00-12:00", "13:00-18:00"]
+  wed: ["08:00-12:00", "13:00-18:00"]
+  thu: ["08:00-12:00", "13:00-18:00"]
+  fri: ["08:00-12:00", "13:00-17:00"]
+  sat: ["09:00-12:00"]
+
+closed_dates:                       # holidays (YYYY-MM-DD)
+  - 2026-12-25
+  - 2027-01-01
+
+services:
+  - id: general-consultation
+    name: General consultation
+    duration_minutes: 30
+    price: 120.00
+  - id: follow-up
+    name: Follow-up visit
+    duration_minutes: 20
+    price: 60.00
+    description: Within 30 days of a consultation.
+  - id: dermatology
+    name: Dermatology consultation
+    duration_minutes: 40
+    price: 180.00
+  - id: physiotherapy
+    name: Physiotherapy session
+    duration_minutes: 50
+    price: 90.00
+  - id: blood-test
+    name: Blood test collection
+    duration_minutes: 15
+    price: 45.00
+    description: Fasting of 8 hours may be required.

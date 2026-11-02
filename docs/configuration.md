@@ -26,6 +26,16 @@ The model must support tool calling (function calling).
 | `MAX_CONTEXT_MESSAGES` | `40` | Messages sent to the model per call (most recent). Full history stays in the checkpoint. |
 | `REQUIRE_CONFIRMATION_FOR` | `["write"]` | JSON list of risk levels needing approval: `["write"]`, `["read","write"]` or `[]` (no approval, not recommended). |
 
+## Calendar (clinic-example)
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `CALENDAR_BACKEND` | `local` | `local`: appointments in `DATA_DIR/<agent>-appointments.json`. `google`: Google Calendar. |
+| `GOOGLE_CALENDAR_ID` | unset | Calendar ID from Google Calendar settings. Required for `google`. |
+| `GOOGLE_CREDENTIALS_FILE` | unset | Path to the service-account JSON key, outside the repository. Required for `google`. |
+
+Setup: [Google Calendar integration](integrations/google-calendar.md). Requires `uv sync --extra google`.
+
 ## HTTP API
 
 | Variable | Default | Description |

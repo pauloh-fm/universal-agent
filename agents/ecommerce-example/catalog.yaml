@@ -1,0 +1,48 @@
+# Fictitious catalog. Replace load_catalog() in tools/ecommerce.py to read from your store platform.
+currency: USD
+shipping_flat: 9.90
+free_shipping_over: 150
+
+products:
+  - sku: BKP-30
+    name: Trail Backpack 30L
+    price: 89.90
+    stock: 25
+    description: Water-resistant daypack with laptop sleeve and rain cover.
+    tags: [backpack, hiking, travel, bag]
+  - sku: BKP-55
+    name: Trekking Backpack 55L
+    price: 149.00
+    stock: 8
+    description: Adjustable back system for multi-day treks, hydration compatible.
+    tags: [backpack, trekking, camping, bag]
+  - sku: TNT-2P
+    name: Lightweight Tent 2 Person
+    price: 199.00
+    stock: 5
+    description: 2.1 kg freestanding tent, double wall, 3-season.
+    tags: [tent, camping]
+  - sku: SLP-5C
+    name: Sleeping Bag 5C
+    price: 79.50
+    stock: 12
+    description: Synthetic insulation, comfort temperature 5C, compression sack included.
+    tags: [sleeping, bag, camping]
+  - sku: BTL-1L
+    name: Insulated Bottle 1L
+    price: 29.90
+    stock: 60
+    description: Keeps drinks cold for 24 hours or hot for 12 hours.
+    tags: [bottle, water, hydration]
+  - sku: LMP-HD
+    name: Rechargeable Headlamp
+    price: 34.90
+    stock: 0
+    description: 400 lumens, USB-C charging, red light mode.
+    tags: [headlamp, light, camping, hiking]
+  - sku: JKT-RN
+    name: Packable Rain Jacket
+    price: 119.00
+    stock: 14
+    description: Waterproof and breathable, packs into its own pocket. Sizes S to XL.
+    tags: [jacket, rain, clothing]

@@ -19,3 +19,9 @@ build/
 .idea/
 .vscode/
 .DS_Store
+
+# Google credentials: never commit
+*service-account*.json
+credentials*.json
+client_secret*.json
+token*.json
