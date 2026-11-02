@@ -1,6 +1,6 @@
 [project]
 name = "universal-agent"
-version = "0.1.0"
+version = "0.2.0"
 description = "A small, documented template for tool-using AI agents (LangGraph + FastAPI) with human approval for side effects."
 readme = "README.md"
 license = "Apache-2.0"
